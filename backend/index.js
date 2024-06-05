@@ -16,7 +16,7 @@ app.post("/todo", async (req, res) => {
     description: createPayload.description,
     completed: false,
   });
-  req.json({ msg: "Todo created" });
+  res.json({ msg: "Todo created" });
 });
 
 app.get("/todo", async (req, res) => {
